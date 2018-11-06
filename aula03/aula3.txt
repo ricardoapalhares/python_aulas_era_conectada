@@ -1,0 +1,26 @@
+
+Aula 3: 06/11/2018
+
+Algoritmo para troca de pneu de um carro:
+1. Parar o carro no acostamento;
+2. Desligar o carro;
+3. Sair do carro;
+4. Abrir a mala do carro;
+5. Tirar o triangulo, step e o macaco do carro;
+6. Colocar o triangulo perto do carro para avisar que está trocando o pneu;
+7. Montar o macaco no carro;
+8. Retirar o pneu furado;
+9. Colocar o step;
+10. Desmontar o macaco;
+11. Guardar triangulo, pneu furado e o macaco dentro do carro;
+12. Entrar no carro;
+13. Ligar o carro;
+14. Sair com o carro.
+
+
+
+
+
+
+
+
