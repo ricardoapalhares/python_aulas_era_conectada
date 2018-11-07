@@ -13,7 +13,9 @@ x = int(lado1)
 y = int(lado2)
 z = int(lado3)
 
-if x == y and x == z:
+if (x+y)>z or (x+z)>y or (y+z)>x:
+	print("Não é um triângulo")
+elif x == y and x == z:
 	print("É um triângulo Equilátero")
 elif (x == y and x != z) or (x == z and x != y):
 	print("É um triângulo Isósceles")
