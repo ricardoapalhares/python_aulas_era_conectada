@@ -19,11 +19,23 @@ git commit -m "Teste"
 
 git push
 
+git rm aula03/aula3.txt
+
+git commit -m "Removendo arquivo aula3.txt"
+
+git push
 
 
 
 Primeira coisa que faz antes de iniciar o trabalho:
 git pull
+
+
+
+
+
+
+
 
 
 

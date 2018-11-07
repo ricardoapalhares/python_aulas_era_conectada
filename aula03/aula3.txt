@@ -1,7 +1,7 @@
 
 Aula 3: 06/11/2018
 
-Algoritmo para troca de pneu de um carro:
+Descreva um algoritmo para trocar o pneu de um carro:
 1. Parar o carro no acostamento;
 2. Desligar o carro;
 3. Sair do carro;
@@ -16,6 +16,18 @@ Algoritmo para troca de pneu de um carro:
 12. Entrar no carro;
 13. Ligar o carro;
 14. Sair com o carro.
+
+Endereço legal:
+https://matplotlib.org/
+
+ctrl + d / para comentar
+ctrl + d para alterar dois lugares ao mesmo tempo
+crtl + b para executar no python
+
+
+
+
+
 
 
 
