@@ -5,26 +5,20 @@
 #Qual o tipo do Triângulo?
 #A soma das medidas de dois lados de um triângulo é maior que a medida do terceiro lado
 
-lado1 = input("Digite o primeiro lado: ")
-lado2 = input("Digite o segundo lado: ")
-lado3 = input("Digite o terceiro lado: ")
+medida1 = input("Digite a primeira medida: ")
+medida2 = input("Digite a segunda medida: ")
+medida3 = input("Digite a terceira medida: ")
 
-x = int(lado1)
-y = int(lado2)
-z = int(lado3)
+x = int(medida1)
+y = int(medida2)
+z = int(medida3)
 
-if (x+y)>z or (x+z)>y or (y+z)>x:
-	print("Não é um triângulo")
+if (x+y)<z or (x+z)<y or (y+z)<x:
+	print("As medidas Medida 1, Medida 2 e Medida 3 não formam um triângulo.")
 elif x == y and x == z:
-	print("É um triângulo Equilátero")
-elif (x == y and x != z) or (x == z and x != y):
-	print("É um triângulo Isósceles")
+	print("As medidas Medida 1, Medida 2 e Medida 3 formam um triângulo Equilátero.")
+elif (x == y and x != z) or (x == z and x != y) or (y == z and x != y):
+	print("As medidas Medida 1, Medida 2 e Medida 3 formam um triângulo Isósceles.")
 elif x != y and y != z:
-	print ("É um triângulo Escaleno")
+	print ("As medidas Medida 1, Medida 2 e Medida 3 formam um triângulo Escaleno.")
 
-# int(lado1) + int(lado2) > int(lado3)
-# 	print("Não é um triângulo")
-# elif int(lado1) + int(lado3) > int(lado2)
-# 	print("Não é um triângulo")
-# elif int(lado2) + int(lado3) > int(lado1)
-# 	print("Não é um triângulo")
