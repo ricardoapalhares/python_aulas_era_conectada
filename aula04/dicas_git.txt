@@ -1,0 +1,7 @@
+.gitignore
+
+git reset .
+
+git reset HEAD~
+
+
