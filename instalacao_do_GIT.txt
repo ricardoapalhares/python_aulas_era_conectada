@@ -15,6 +15,9 @@ git diff aula01/tdd.py
 
 git add aula01/tdd.py
 
+//Adiciona tudo
+git add .
+
 git commit -m "Teste"
 
 git push
