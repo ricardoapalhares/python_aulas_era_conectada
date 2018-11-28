@@ -1,7 +1,6 @@
 import unittest
 
 # Dicionário de idiomas
-
 esp = {1: 'uno', 2: 'dos', 3: 'tres', 4: 'quatro', 5: 'cinco' }
 ing = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
 por = {1: 'um', 2: 'dois', 3: 'três', 4: 'quatro', 5: 'cinco'}
