@@ -8,6 +8,8 @@
 
 
 #pip install requests
+#pip uninstall requests
+
 #pip list
 
 #import this
