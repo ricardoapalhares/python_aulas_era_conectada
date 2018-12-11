@@ -33,6 +33,8 @@ git push
 Primeira coisa que faz antes de iniciar o trabalho:
 git pull
 
+git config --global user.name "Ricardo Palhares"
+git config --global user.email "ricardoapalhares@gmail.com"
 
 
 
