@@ -33,10 +33,30 @@ git push
 Primeira coisa que faz antes de iniciar o trabalho:
 git pull
 
+--configuração da conta
 git config --global user.name "Ricardo Palhares"
 git config --global user.email "ricardoapalhares@gmail.com"
 
+git config --local user.name "Ricardo Palhares"
+git config --local user.email "ricardoapalhares@gmail.com"
 
+--commit viewer for git 
+gitk
+
+-- galho
+git branch
+
+--master  -> g1.com
+--developer -> 
+
+--criar galho novo
+git checkout -b developer master
+
+--remover branch
+git branch -D developer
+
+--mudando de branch
+git checkout master
 
 
 
