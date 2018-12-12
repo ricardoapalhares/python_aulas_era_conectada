@@ -58,7 +58,8 @@ git branch -D developer
 --mudando de branch
 git checkout master
 
-
+--push em outra branch
+git push -u origin developer
 
 
 
