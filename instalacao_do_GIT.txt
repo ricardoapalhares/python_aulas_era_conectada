@@ -43,7 +43,7 @@ git config --local user.email "ricardoapalhares@gmail.com"
 --commit viewer for git 
 gitk
 
--- galho
+-- listar galhos
 git branch
 
 --master  -> g1.com
@@ -61,7 +61,29 @@ git checkout master
 --push em outra branch
 git push -u origin developer
 
+--desfazer um commit
+git reset HEAD~
 
+--desfaz commit específico
+git revert -m 1 fc04...1e
+
+--log (os últimos 10 mensagens do commit)
+git log -10
+
+--adicionando dois arquivos na sequencia
+git add aula06/aula_dicionario.py aula06/
+
+--desfaz add
+git reset
+
+--desfaz modificação no arquivo
+git checkout .
+
+--desfaz um commit
+git reset HEAD~
+
+--semelhante ao gitk para visualizar as alterações das versões dos arquivos
+tig 
 
 
 
