@@ -1,3 +1,4 @@
+#criar ambiente virtual
 #mkvirtualenv django -p python
 #pip install django
 #acompanhar instalacao do django
@@ -24,5 +25,17 @@
 
 #python manage.py migrate
 #python manage.py sqlmigrate polls 0001
+
+# python manage.py createsuperuser
+# Username: admin
+# Email address: admin@example.com. ...
+# Password: ********** Password (again): ********* 
+# Superuser created successfully.
+
+# python manage.py shell
+
+# from polls.models import Choice, Question
+# Question.objects.all()
+
 
 
