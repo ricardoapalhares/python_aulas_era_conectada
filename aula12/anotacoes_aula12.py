@@ -1,3 +1,6 @@
+
+# 13/12/2018 (quinta-feira)
+
 #criar ambiente virtual
 #mkvirtualenv django -p python
 #pip install django
