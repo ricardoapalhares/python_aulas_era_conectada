@@ -16,3 +16,12 @@ class Choice(models.Model):
     
     def __str__(self):
         return self.choice_text
+
+class Comment(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice = models.ForeignKey(Choice, on_delete=models.CASCADE)
+    comments_text = models.CharField(max_length=200)
+    nota = models.DecimalField(default=0, max_digits=5, decimal_places=2)
+
+    def __str__(self):
+        return self.comments_text
