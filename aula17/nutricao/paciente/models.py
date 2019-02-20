@@ -7,6 +7,13 @@ class Paciente(models.Model):
     profissao = models.CharField(max_length=50)
     email = models.EmailField(max_length=254)
 
+    def __str__(self):
+        return self.nome
+
+class Dieta(models.Model):
+    paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
+    plano_alimentar = models.CharField(max_length=200)
+    periodo = models.CharField(max_length=20, choices=[('1','Manhã'),('2','Tarde'),('3','Noite')])
 
 
 
