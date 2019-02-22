@@ -5,7 +5,7 @@
 # 
 # Orientação a Objetos
 # 
-# 
+# design patterns (python) - Luciano Ramalho
 # 
 # 
 # 
