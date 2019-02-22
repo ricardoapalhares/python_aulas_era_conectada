@@ -14,34 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
 from django.conf.urls import url, include
-from rest_framework import routers, serializers, viewsets
-from paciente.models import Paciente, Dieta
+from rest_framework import routers
 
-# Serializers define the API representation.
-class PacienteSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Paciente
-        fields = ('nome', 'idade')
-        #fields = ('nome', 'idade', 'telefone', 'profissao', 'email')
-
-class DietaSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Dieta
-        fields = '__all__'
-
-# ViewSets define the view behavior.
-class PacienteViewSet(viewsets.ModelViewSet):
-    #queryset = Paciente.objects.all()
-    queryset = Paciente.objects.filter(profissao = 'Analista')
-    serializer_class = PacienteSerializer
-
-class DietaViewSet(viewsets.ModelViewSet):
-    #queryset = Paciente.objects.all()
-    queryset = Dieta.objects.all()
-    serializer_class = DietaSerializer
-
+from nutricao.api.views import PacienteViewSet, DietaViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()

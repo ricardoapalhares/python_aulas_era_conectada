@@ -1,4 +1,4 @@
-# Aula 18 - 19/02/2019
+# Aula 18 - 19/02/2019 (terça-feira)
 # API - django
 
 # http://api.io/app
