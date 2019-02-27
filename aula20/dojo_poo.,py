@@ -1,0 +1,14 @@
+import unittest
+
+
+
+
+class DojoPOOMethods(unittest.TestCase):
+    def setUp(self):
+        print('bla')
+    
+    def test_(self):
+        self.assertTrue(True)
+
+if __name__ == '__main__':
+    unittest.main()
