@@ -12,3 +12,40 @@ class DojoPOOMethods(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+/*
+
+var valor  = prompt("Valor do saque(apenas números inteiros sem pontos)");
+
+var qtd100 = parseInt(valor/100);
+console.log("notas de 100: " + qtd100);
+
+var resto = (valor-(qtd100*100));
+var qtd50 = parseInt(resto/50);
+console.log("notas de 50: " + qtd50);
+
+resto = (valor-((qtd100*100)+(qtd50*50)));
+var qtd20 = parseInt(resto/20);
+console.log("notas de 20: " + qtd20);
+
+resto = (valor-((qtd100*100)+(qtd50*50)+(qtd20*20)));
+var qtd10 = parseInt(resto/10);
+console.log("notas de 10: " + qtd10);
+
+resto = (valor-((qtd100*100)+(qtd50*50)+(qtd20*20)+(qtd10*10)));
+var qtd5 = parseInt(resto/5);
+console.log("notas de 5: " + qtd5);
+
+resto = (valor-((qtd100*100)+(qtd50*50)+(qtd20*20)+(qtd10*10)+(qtd5*5)));
+var qtd2 = parseInt(resto/2);
+console.log("notas de 2: " + qtd2);
+
+resto = (valor-((qtd100*100)+(qtd50*50)+(qtd20*20)+(qtd10*10)+(qtd5*5)+(qtd2*2)));
+
+if (resto==1){
+console.log("restou: " + resto);
+}
+
+
+*/

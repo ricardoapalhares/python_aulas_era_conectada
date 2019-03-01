@@ -12,9 +12,19 @@
 # type(lista)
 # dir(lista)
 # 
+# __rasteja() -> atributo privado
 # 
-# 
-# 
-# 
-# 
+# class Gato(Animal):
+#   def emitir_som(self): -- O self diz que esse método faz parte da classe..
+#       print("Miau")
+#  
+#  
+#  
+#  
+#  
+#  
+#  
+#  
+#  
+#  
 #  
