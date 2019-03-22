@@ -1,4 +1,4 @@
-
+# 
 # 19/03/2019 (terça-feira)
 # 
 # https://2019.pythonbrasil.org.br

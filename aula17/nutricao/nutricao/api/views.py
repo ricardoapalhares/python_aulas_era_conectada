@@ -1,6 +1,6 @@
-from paciente.models import Paciente, Dieta
 from rest_framework import viewsets
 
+from paciente.models import Paciente, Dieta
 from nutricao.api.serializers import PacienteSerializer, DietaSerializer
 from nutricao.api.filters import PacienteFilter
 

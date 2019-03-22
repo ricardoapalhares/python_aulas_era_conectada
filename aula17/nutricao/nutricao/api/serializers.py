@@ -1,5 +1,6 @@
-from paciente.models import Paciente, Dieta
 from rest_framework import serializers
+
+from paciente.models import Paciente, Dieta
 
 # Serializers define the API representation.
 class PacienteSerializer(serializers.HyperlinkedModelSerializer):
