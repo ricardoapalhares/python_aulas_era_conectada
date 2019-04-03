@@ -1,22 +1,35 @@
 from rest_framework import serializers
 
-from paciente.models import Paciente, Dieta
+from paciente.models import Paciente, Dieta, Especialidade, Nutricionista, Consulta, Avaliacao
 
 # Serializers define the API representation.
 #class PacienteSerializer(serializers.HyperlinkedModelSerializer):
 class DietaSerializer(serializers.ModelSerializer):
-    PERIODO = [('1','Manhã'),('2','Tarde'),('3','Noite')]
-    
-    paciente = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     class Meta:
         model = Dieta
-        #fields = ('paciente', 'plano_alimentar', 'periodo', 'paciente')
-        fields = ('paciente', 'plano_alimentar', 'periodo', 'paciente')
+        fields = ('plano_alimentar', 'periodo')
 
 class PacienteSerializer(serializers.ModelSerializer):
-    dieta = DietaSerializer(many=True, read_only=True)
     class Meta:
         model = Paciente
-        #fields = ('nome', 'idade')
-        fields = ('nome', 'idade', 'telefone', 'profissao', 'email', 'dieta')
+        fields = ('nome', 'data_nascimento', 'telefone', 'profissao', 'email', 'sexo')
+    
+class EspecialidadeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Especialidade
+        fields = ('nome', 'descricao')
 
+class NutricionistaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Nutricionista
+        fields = ('nome', 'especialidades', 'email', 'telefone', 'crn')
+
+class ConsultaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Consulta
+        fields = ('data_hora', 'tipo', 'local', 'dieta', 'paciente', 'nutricionista', 'avaliacao')
+
+class AvaliacaoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Avaliacao
+        fields = ('peso', 'altura')
