@@ -23,9 +23,9 @@
 # teste
 # pib.py
 # 
-# 
-# 
-# 
+# conda info --envs
+# conda activate envpandas
+# conda install requests
 # 
 # 
 # 
