@@ -23,7 +23,7 @@ list_columns.insert(0, 'id')
 con = sqlite3.connect('db.sqlite')
 cur = con.cursor()
 cur.execute('CREATE TABLE morality ({})')
-with open ('data.csv', 'rb')
+with open ('data.csv', 'rb'):
 
 
 #with open('data.csv', 'w+') as file:
