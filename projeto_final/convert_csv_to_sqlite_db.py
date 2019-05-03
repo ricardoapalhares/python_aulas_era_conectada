@@ -55,17 +55,17 @@ with open ('data.csv', 'r', encoding='cp437') as f:
             numero = row[4]
         endereco = row[3]+', ' + numero + ' ' + row[7] + ' ' + row[8]
         geolocator = Nominatim(user_agent="specify_your_app_name_here")
-        #location = geolocator.geocode(endereco)
+        location = geolocator.geocode(endereco)
 
-        #if location is None:
-        row.insert(13,'')
-        #else:
-        #    row.insert(13,str(location.latitude))
+        if location is None:
+            row.insert(13,'')
+        else:
+            row.insert(13,str(location.latitude))
         
-        #if location is None:
-        row.insert(14,'')
-        #else:
-        #    row.insert(14,str(location.longitude))
+        if location is None:
+            row.insert(14,'')
+        else:
+            row.insert(14,str(location.longitude))
         valor = float(row[10])
         row[10] = valor
 

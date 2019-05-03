@@ -1,6 +1,7 @@
 # Aqui estao listados todos os comandos utilizados no projeto
 # # conda create -n envcombustivel python=3
 # conda activate envcombustivel
+# pip install -r requirements.txt
 # conda install pandas
 # conda install jupyter
 # conda install xlrd
@@ -44,7 +45,7 @@
 # http://blog.mathieu-leplatre.info/geodjango-maps-with-leaflet.html
 # https://github.com/leplatrem/django-leaflet-geojson
 #
-#
+# python manage.py inspectdb --database=blah > you_app/models.py
 #
 #
 #
