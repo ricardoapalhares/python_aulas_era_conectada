@@ -14,6 +14,9 @@ class Country(models.Model):
 
     class Meta:
         db_table = 'country'
+        
+    def __str__(self):
+        return self.country_name
 
 class Mortality(models.Model):
     iso_code = models.ForeignKey(Country, on_delete=models.CASCADE, db_column='iso_code')
